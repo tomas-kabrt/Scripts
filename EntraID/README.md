@@ -12,6 +12,22 @@ client_secret='Client Secret'
 tenant_id='Directory (tenant) ID'
 ```
 
+## EntraID_UPN_validation.ps1
+
+Validate the list of users against the EntraID and return accounts that doesn't exist in the tenant.
+
+## EntraID_add_csv_users_group.ps1
+
+Add the list of users to EntraID group.
+
+## EntraID_email_backfill.ps1
+
+Fills-in email field for the list of users based their UserPrincipalName field. Can be used in conjunction with `EntraID_add_csv_users_group`
+
+## EntraID_shared_accounts.ps1
+
+Try to count the number of possible shared accounts in the EntraID tenant.
+
 ### Documentation
 
 https://learn.microsoft.com/it-it/graph/api/user-get?view=graph-rest-beta&tabs=http

@@ -1,6 +1,6 @@
-# The script checks the existence of the users from the csv in EntraID. Usually it is used to validate all the users on the list are still active in EntraID.
+# The script checks the existence of the users from the csv in EntraID based on email/UPN. This script can be used used to validate if the list of users is still active in EntraID.
 # Prerequisities: Install-Module -Name Microsoft.Graph
-# Usabe: pwsh ./update-email.ps1
+# Usage: pwsh ./EntraID_UPN_validation.ps1
 
 $csv_file_user = "user_list.csv"
 
