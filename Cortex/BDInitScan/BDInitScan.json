@@ -1,0 +1,27 @@
+{
+  "name": "Bitdefender_Init_Scan",
+  "version": "1.0",
+  "author": "Tomas Kabrt",
+  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "license": "AGPL-V3",
+  "description": "Initiating full scan of the endpoint your event in one click!",
+  "dataTypeList": ["thehive:event"],
+  "command": "BDInitScan/BDInitScan.py",
+  "baseConfig": "BDInitScan",
+  "configurationItems": [
+    {
+      "name": "Bitdefender_API_Key",
+      "description": "A Bitdefender API key with sufficent rights to initiate a scan",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "Bitdefender_Url",
+      "description": "URL of your Bitdefender API, must be accessible from Cortex server. eg: https://cloudgz.gravityzone.bitdefender.com/api/v1.0/jsonrpc/network",
+      "type": "string",
+      "multi": false,
+      "required": true
+    }
+  ]
+}
