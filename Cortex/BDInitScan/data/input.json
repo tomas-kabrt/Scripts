@@ -1,0 +1,64 @@
+{
+   "data":{
+  "_id": "~450572504",
+  "id": "~450572504",
+  "createdBy": "aa@aaa.com",
+  "updatedBy": "aa@aaa.com",
+  "createdAt": 1670940205487,
+  "updatedAt": 1673531889498,
+  "_type": "alert",
+  "type": "alertType",
+  "source": "Bitdefender",
+  "sourceRef": "66529769309724",
+  "externalLink": null,
+  "case": null,
+  "title": "[AV] aaa-bbbbbbb.local /Users/aaaaa/Downloads/eicar.com ",
+  "description": "Bitdefender detected following event:\n**Detection Time:** 2022-12-13T14:01:57.000Z\n**Detection Name:** EICAR-Test-File (not a virus)\n**File Path:** /Users/aaaaa/Downloads/eicar.com \n**With result:** deleted\n**Computer FQDN:** aaa-bbbbbbb.local\n ",
+  "severity": 2,
+  "date": 1670940205432,
+  "tags": [
+    "BD",
+    "File"
+  ],
+  "tlp": 2,
+  "pap": 2,
+  "status": "New",
+  "stage": "New",
+  "follow": true,
+  "customFields": {
+    "hostname": {
+      "string": "aaa-bbbbbbb.local",
+      "order": 0,
+      "_id": "~368681120"
+    },
+    "av-detection-name": {
+      "string": "EICAR-Test-File (not a virus)",
+      "order": 0,
+      "_id": "~368685216"
+    },
+    "bitdefender-computer-id": {
+      "string": "aaaaaaaaa20c210fb6314",
+      "order": null,
+      "_id": "~819212392"
+    }
+  },
+  "caseTemplate": null,
+  "artifacts": [],
+  "similarCases": [],
+  "customFieldValues": {
+    "av-detection-name": "EICAR-Test-File (not a virus)",
+    "hostname": "aaa-bbbbbbb.local",
+    "bitdefender-computer-id": "aaaaaaaaa20c210fb6314"
+  }
+},
+   "dataType":"thehive:event",
+   "tlp":2,
+   "pap":2,
+   "parameters":{
+      "user":"user"
+   },
+   "config":{
+      "Bitdefender_Url": "https://cloudgz.gravityzone.bitdefender.com/api/v1.0/jsonrpc/network",
+      "Bitdefender_API_Key": "----ADD THE API KEY HERE----"
+   }
+}
